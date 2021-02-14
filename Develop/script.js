@@ -35,17 +35,17 @@ function generatePassword () {
         }
 
         if (confirmNumbers) {
-          userSelection += numbers.split('') //if true on confirm window, pulls from corresponding string and adds to var user 
+          userSelection += numbers //if true on confirm window, pulls from corresponding string and adds to var user 
           console.log(userSelection);
         }
 
         if (confirmUppercase) {
-          userSelection += upperCase.split('') //if true on confirm window, pulls from corresponding string and adds to var user 
+          userSelection += upperCase //if true on confirm window, pulls from corresponding string and adds to var user 
           console.log(userSelection);
         }
         
         if (confirmLowercase) {
-          userSelection += lowerCase.split('') //if true on confirm window, pulls from corresponding string and adds to var user 
+          userSelection += lowerCase //if true on confirm window, pulls from corresponding string and adds to var user 
           console.log(userSelection);
         }
 
