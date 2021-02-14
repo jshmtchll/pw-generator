@@ -1,8 +1,8 @@
 // the arryas of characters
-var specialCharacters = ["!#$%&'()*+,-./:;<=>?@[\]^_`{|}~"]
-var lowerCase = ["abcdefghijklmnopqrstuvwxyz"]
-var upperCase = ["ABCDEFGHIJKLMNOPQRSTUVWXYZ"]
-var numbers = ["123456789"]
+var specialCharacters = "!#$%&'()*+,-./:;<=>?@[]^_`{|}~"
+var lowerCase = "abcdefghijklmnopqrstuvwxyz"
+var upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+var numbers = "123456789"
 
 
 
@@ -13,7 +13,7 @@ function generatePassword () {
 //sets passwords length
   if (passwordLength > 7 && passwordLength < 129) {
     window.alert("Your password will have " + passwordLength + " characters." );
-
+    //windows to confirm what characters to use. true or false.
     var  confirmSpecialCharacters = window.confirm("Would you like to include special characters in the password?");
     console.log(confirmSpecialCharacters);
 
@@ -26,28 +26,30 @@ function generatePassword () {
     var confirmLowercase = window.confirm("Would you like to use lowercase letters?");
     console.log(confirmLowercase);
 
-    //user responses being fed into this array
+    
     var userPassword = []
     
     if (confirmSpecialCharacters) {
-      userPassword = specialCharacters //will go to userpassword variable
+      userPassword = specialCharacters.split('') //if true on confirm window, pulls from corresponding array to go to var userPassword
       console.log(userPassword);
     }
 
     if (confirmNumbers) {
-      userPassword = numbers
+      userPassword = numbers.split('')
       console.log(userPassword);
     }
 
     if (confirmUppercase) {
-      userPassword = upperCase
+      userPassword = upperCase.split('')
       console.log(userPassword);
     }
     
     if (confirmLowercase) {
-      userPassword = lowerCase
+      userPassword = lowerCase.split('')
       console.log(userPassword);
     }
+
+    console.log(userPassword);
 
 
 
