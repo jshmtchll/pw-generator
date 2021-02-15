@@ -30,22 +30,22 @@ function generatePassword () {
         var userSelection = []
         
         if (confirmSpecialCharacters) {
-          userSelection += specialCharacters //if true on confirm window, pulls from corresponding string and adds to var user 
+          userSelection += specialCharacters //if true on confirm window, pulls from corresponding string and adds to userSelection array
           console.log(userSelection);
         }
 
         if (confirmNumbers) {
-          userSelection += numbers //if true on confirm window, pulls from corresponding string and adds to var user 
+          userSelection += numbers //if true on confirm window, pulls from corresponding string and adds to userSelection array
           console.log(userSelection);
         }
 
         if (confirmUppercase) {
-          userSelection += upperCase //if true on confirm window, pulls from corresponding string and adds to var user 
+          userSelection += upperCase //if true on confirm window, pulls from corresponding string and adds to userSelection array  
           console.log(userSelection);
         }
         
         if (confirmLowercase) {
-          userSelection += lowerCase //if true on confirm window, pulls from corresponding string and adds to var user 
+          userSelection += lowerCase //if true on confirm window, pulls from corresponding string and adds to userSelection array 
           console.log(userSelection);
         }
 
