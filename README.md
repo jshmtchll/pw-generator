@@ -1,6 +1,6 @@
 # Javascript Password Generator #
 
-![screenshot of password generator](./Develop/images/pwgenscreenshot.png)
+![screenshot of password generator](./Develop/images/pwgenscreenshot.gif)
 
 ### **DESCRIPTION:** This project was the building of a password generator using Javascript to meet the following criteria: ###
 > GIVEN I need a new, secure password <br>
