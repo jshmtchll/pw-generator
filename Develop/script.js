@@ -8,6 +8,7 @@ var numbers = "123456789"
 
 // Assignment code here
 function generatePassword () {
+      //get the length of the password and use parseInt() to change the response from string to numerical value
       var passwordLength = parseInt(window.prompt("How long would you like your password to be? Choose between 8 and 128."));
       console.log(passwordLength);
        //sets passwords length
