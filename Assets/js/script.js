@@ -27,6 +27,24 @@ function generatePassword () {
         var confirmLowercase = window.confirm("Would you like to use lowercase letters?");
         console.log(confirmLowercase);
 
+        while (confirmSpecialCharacters === false && confirmNumbers === false && confirmUppercase === false && confirmLowercase === false) {
+          
+          window.alert("Please select at least one option.");
+        
+          var  confirmSpecialCharacters = window.confirm("Would you like to include special characters in the password?");
+          console.log(confirmSpecialCharacters);
+
+          var  confirmNumbers = window.confirm("Would you like to use numbers in your password?");
+          console.log(confirmNumbers);
+
+          var confirmUppercase = window.confirm("Would you like to use uppercase letters?");
+          console.log(confirmUppercase);
+
+          var confirmLowercase = window.confirm("Would you like to use lowercase letters?");
+          console.log(confirmLowercase);
+
+        }
+
         //userSelection stores characters user slected for password from above window.confirms
         var userSelection = []
         
